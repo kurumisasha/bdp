@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Voucher Birthday Platinum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Voucher Birthday Platinum</h1>
+        <form id="voucherForm">
+            <label for="cardNumber">Enter Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            <button type="submit">Generate Voucher</button>
+        </form>
+        <div id="voucherDetails" class="hidden">
+            <h2>Voucher Details</h2>
+            <p><strong>Voucher Code:</strong> <span id="voucherCode"></span></p>
+            <p><strong>Expiry Date:</strong> <span id="expiryDate"></span></p>
+            <p><strong>Status:</strong> <span id="status"></span></p>
+        </div>
+        <div id="errorMessage" class="hidden">
+            <p>Error: Could not generate voucher. Please try again.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
